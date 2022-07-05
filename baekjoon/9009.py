@@ -1,3 +1,5 @@
+import time
+start_time = time.time()
 def fibona(n):
     if n >= 3: 
         return fibona(n-1) + fibona(n-2)
@@ -14,5 +16,5 @@ for i in range(N):
             x -= fibona(n-1)
             n = 0
         n += 1
-    
-    print(sorted(fibona_list))
+    end_time = time.time()
+    print(sorted(fibona_list),(end_time-start_time))

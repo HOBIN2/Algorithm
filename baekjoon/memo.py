@@ -1,2 +1,2 @@
-import math
-print(math.log2(1000))
+a = [1,2,3]
+print(a[:1])
