@@ -1,3 +1,12 @@
-N = 5
-H_W_list = [[55,185],[58, 183],[88, 186],[60, 175],[46, 155]]
-print(max(H_W_list,2))
+N = int(input())
+W_H_list = []
+for i in range(N):
+    W, H = map(int,input().split())
+    W_H_list.append((W, H))
+
+for i in W_H_list:
+    rank = 1
+    for j in W_H_list:
+        if i[0] < j[0] and i[1] < j[1]:
+            rank += 1
+    print(rank, end = ' ')
